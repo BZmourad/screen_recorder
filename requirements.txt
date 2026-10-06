@@ -6,3 +6,5 @@ pywin32
 sounddevice
 imageio-ffmpeg
 python-dotenv
+Pillow
+pyinstaller
