@@ -6,7 +6,7 @@ import sys
 from PySide6.QtWidgets import QApplication
 
 from logger import setup_logging
-from ui import MainWindow
+from ui import MainWindow, apply_theme
 
 
 def main() -> int:
@@ -15,6 +15,7 @@ def main() -> int:
     log.info("=== Screen Recorder starting ===")
 
     app = QApplication(sys.argv)
+    apply_theme(app)
 
     def _excepthook(exc_type, exc_value, exc_tb):
         log.critical("Uncaught exception", exc_info=(exc_type, exc_value, exc_tb))
