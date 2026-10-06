@@ -1,0 +1,8 @@
+PySide6
+mss
+opencv-python
+numpy
+pywin32
+sounddevice
+imageio-ffmpeg
+python-dotenv
